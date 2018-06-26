@@ -16,7 +16,7 @@ $(document).ready(function(){ // makes functions is available after document loa
         }
         grid.preventDefault(); //stops default action of makeGrid()
         
-        $('.unitBox').click(function(){ // add or remove selected background color to each cells
+        $('.unitBox').click(function(){ // add or remove selected background color to each cell
             var color = $('#colorPicker').val(); // select color input
             if($(this).attr('data-click-state') == 1){ // toggles between input and white default background color for class unitBox of each cell
                 $(this).attr('data-click-state', 0);
