@@ -10,15 +10,15 @@ $(document).ready(function(){ // makes functions is available after document loa
             $('table').append('<tr></tr>'); // appending column part of grid to table
             for(var widthIndex = 1; widthIndex <= width; widthIndex++){ // iterating upto input width
                 $('tr:last').append('<td></td>'); // appending row to grid column
-                $('td').attr('class', 'unitBox'); // add class attribute
+                $('td').attr('class', 'unitBox'); // add class attribute to row
             }
             heightIndex++;
         }
-        grid.preventDefault(); //stops default action of makeGrid
+        grid.preventDefault(); //stops default action of makeGrid()
         
         $('.unitBox').click(function(){ // add or remove selected background color to each cells
             var color = $('#colorPicker').val(); // select color input
-            if($(this).attr('data-click-state') == 1){ // toggles between input and white default background color for class
+            if($(this).attr('data-click-state') == 1){ // toggles between input and white default background color for class unitBox of each cell
                 $(this).attr('data-click-state', 0);
                 $(this).css('background-color', 'white');
             } else{
