@@ -1,6 +1,6 @@
 $(document).ready(function(){ // makes functions is available after document loads
     var size = $('#sizePicker'); // Select size input
-    size.submit(function makeGrid(grid) { // When size is submitted by the user, call makeGrid()
+    size.submit(function makeGrid(grid) { // When size is submitted by the user, call makeGrid() to generate grid from input height and width
         // Your code goes here!
         $('table tr').remove(); // prevents making more grid after initial creation       
         var height = $('#inputHeight').val(); // height input to make grid
