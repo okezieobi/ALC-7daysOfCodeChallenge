@@ -1,0 +1,26 @@
+{
+  "name": "alc-7daysofcodechallenge",
+  "version": "1.0.0",
+  "description": "https://okezieobi.github.io/ALC-7daysOfCodeChallenge/",
+  "main": "index.html",
+  "scripts": {
+    "start": "browser-sync start --server --files '.html, .css .js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okezieobi/ALC-7daysOfCodeChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okezieobi/ALC-7daysOfCodeChallenge/issues"
+  },
+  "homepage": "https://github.com/okezieobi/ALC-7daysOfCodeChallenge#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.3.22"
+  }
+}
