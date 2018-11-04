@@ -14,7 +14,7 @@
         <h1>Lab: Pixel Art Maker</h1>
     </header>
     <main>
-        <form id="sizePicker">
+        <form>
             <fieldset>
                 <legend>
                     <h2>Choose Grid Size</h2>
@@ -30,7 +30,7 @@
                     </div>
                 </section>
                 <div class="buttonGroup">
-                    <button class="zoom">Submit</button>
+                    <button class="zoom" id="sizePicker">Submit</button>
                     <button class="zoom">Reset</button>
                 </div>
                 <div></div>
@@ -40,7 +40,9 @@
         </form>
 
         <h2>Design Canvas</h2>
-        <table id="pixelCanvas" cellspacing="0" cellpadding="0"></table>
+        <div>
+            <table id="pixelCanvas"></table>
+        </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="designs.js"></script>

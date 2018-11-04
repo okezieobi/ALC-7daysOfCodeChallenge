@@ -1,6 +1,7 @@
 $(document).ready(function() {
   // makes functions is available after document loads
   const size = $('#sizePicker'); // Select size input
+  const reset = $('#reset');
   size.click(function makeGrid(grid) {
     // When size is submitted by the user, call makeGrid() to generate grid from inputs
     // Your code goes here!
@@ -15,7 +16,7 @@ $(document).ready(function() {
         // iterating upto input width
         $('tr:last').append('<td></td>'); // appending row to grid column
         $('td').addClass('unitBox'); // add class
-        $('.unitBox').css({ background: 'white' });
+        $('.unitBox').css({ background: 'white', overlfow: 'scroll' });
       }
       heightIndex++;
     }
@@ -33,5 +34,9 @@ $(document).ready(function() {
         $(this).css('background-color', color);
       }
     });
+  });
+
+  reset.click(function() {
+    location.reload();
   });
 });
